@@ -9,6 +9,6 @@ module.exports.assetPrefixForNamespace = namespace => {
         case 'dev':
             return 'https://cache-dev.myserver.net/web'
         default:
-            return ''
+            return 'https://cache-local.myserver.net/web'
     }
 }
