@@ -1,6 +1,6 @@
 const Index = () => (
     <div>
-        <p>Hello Next.js</p>
+        <p>__webpack_public_path__ in index.js: {__webpack_public_path__}</p>
     </div>
 )
 

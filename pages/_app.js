@@ -8,6 +8,12 @@ export default props => {
         <React.Fragment>
             <Container>
                 <Component {...pageProps} />
+                <div>
+                    <p>
+                        __webpack_public_path__ in _app.js:{' '}
+                        {__webpack_public_path__}
+                    </p>
+                </div>
             </Container>
         </React.Fragment>
     )

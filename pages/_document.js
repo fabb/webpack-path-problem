@@ -5,11 +5,11 @@ export default class MyDocument extends Document {
     render() {
         return (
             <html>
-                <Head>
-                    <title>My Page</title>
-                </Head>
                 <body>
                     <Main />
+                    <div>
+                        <p>__webpack_public_path__ in _document.js: {__webpack_public_path__}</p>
+                    </div>
                     <NextScript />
                 </body>
             </html>
