@@ -1,8 +1,7 @@
 const namespace = process.env.NAMESPACE
-const withStaticImport = require('./plugin-static')
 const assetPrefix = require('./assetPrefix')
 
-module.exports = withStaticImport({
+module.exports = {
     webpack(config, options) {
         const { isServer, dev, buildId } = options
 
@@ -27,4 +26,4 @@ module.exports = withStaticImport({
         namespace: namespace,
     },
     assetPrefix: assetPrefix.assetPrefixForNamespace(namespace),
-})
+}
